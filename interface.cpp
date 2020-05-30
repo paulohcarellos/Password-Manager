@@ -73,7 +73,7 @@ void Interface::generate_password() {
 
 	CLEAR;
 	cout << endl;
-	cout << " Password Chyper" << endl;
+	cout << " Password Cypher" << endl;
 	cout << endl;
 	cout << "  Insert password size: ";
 	cin >> buffer;
@@ -174,7 +174,8 @@ void Interface::save_password(string pass) {
 	cout << " Save password" << endl;
 	cout << endl;
 	cout << "  Insert name: ";
-	cin >> name;
+	cin.ignore();
+	getline(cin, name);
 	cout << "  Password: " << pass << endl;
 	cout << "  Confirm? ";
 	cin >> ans;

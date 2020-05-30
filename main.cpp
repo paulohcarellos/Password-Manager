@@ -9,7 +9,6 @@
 int main() {
 
 	Interface root(PASSWORD, CYPHER1_KEY, CYPHER2_KEY);
-
 	root.start();
 
 	return 0;
